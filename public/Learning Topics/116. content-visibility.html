@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>content-visibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div id="preview" class="preview scrollEditor">
+    <div id="container-ruller" />
+    <div id="preview-content">
+      <h1 type="title" class="main-title" id="content-visibility">
+content-visibility</h1>
+<h1 id="definition" class="preview-paragraph-0 preview-line 0" data_line_start="0" data_line_end="0" data_line="0,1" count_line="1">Definition</h1>
+<div class="preview-paragraph-2 preview-line 2" data_line_start="2" data_line_end="2" data_line="2,3" count_line="1">The <code>content-visibility</code> CSS property allows the browser to skip an element's rendering work, including layout and painting, until it is needed. This can improve performance, especially for off-screen content.</div>
+<h3 id="values" class="preview-paragraph-4 preview-line 4" data_line_start="4" data_line_end="4" data_line="4,5" count_line="1">Values</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>visible</code></td>
+<td>The default value. The element is rendered fully.</td>
+</tr>
+<tr>
+<td><code>hidden</code></td>
+<td>The element is skipped during rendering but still affects layout.</td>
+</tr>
+<tr>
+<td><code>auto</code></td>
+<td>The browser determines if the element should be skipped for rendering work.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example" class="preview-paragraph-12 preview-line 12" data_line_start="12" data_line_end="12" data_line="12,13" count_line="1">Example</h3>
+<div  class="preview-paragraph-14 preview-line 14 15 16 17 18 19 20 21 22 23 24 25 26" data_line_start="14" data_line_end="26" data_line="14,27" count_line="13" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-14 preview-line 14 15 16 17 18 19 20 21 22 23 24 25 26" data_line_start="14" data_line_end="26" data_line="14,27" count_line="13" style="overflow: auto; position: relative;"><pre><code class="hljs language-css"><span class="hljs-selector-class">.element-visible</span> {
+    <span class="hljs-attribute">content-visibility</span>: visible; <span class="hljs-comment">/* The element is rendered fully */</span>
+}
+
+<span class="hljs-selector-class">.element-hidden</span> {
+    <span class="hljs-attribute">content-visibility</span>: hidden; <span class="hljs-comment">/* The element is skipped during rendering but still affects layout */</span>
+}
+
+<span class="hljs-selector-class">.element-auto</span> {
+    <span class="hljs-attribute">content-visibility</span>: auto; <span class="hljs-comment">/* The browser determines if the element should be skipped */</span>
+}
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value=".element-visible {
+    content-visibility: visible; /* The element is rendered fully */
+}
+
+.element-hidden {
+    content-visibility: hidden; /* The element is skipped during rendering but still affects layout */
+}
+
+.element-auto {
+    content-visibility: auto; /* The browser determines if the element should be skipped */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value=".element-visible {
+    content-visibility: visible; /* The element is rendered fully */
+}
+
+.element-hidden {
+    content-visibility: hidden; /* The element is skipped during rendering but still affects layout */
+}
+
+.element-auto {
+    content-visibility: auto; /* The browser determines if the element should be skipped */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="description" class="preview-paragraph-28 preview-line 28" data_line_start="28" data_line_end="28" data_line="28,29" count_line="1">Description</h3>
+<div class="preview-paragraph-30 preview-line 30" data_line_start="30" data_line_end="30" data_line="30,31" count_line="1">The <code>content-visibility</code> property can be particularly useful for optimizing the performance of web pages by deferring the rendering of off-screen elements. This is especially effective for large, scrollable pages where not all elements are visible at once.</div>
+<div class="preview-paragraph-32 preview-line 32" data_line_start="32" data_line_end="32" data_line="32,33" count_line="1">When <code>content-visibility</code> is set to <code>hidden</code>, the element is skipped during the rendering process, but it still occupies space in the layout, ensuring that the rest of the page's layout remains unchanged. With the <code>auto</code> value, the browser uses heuristics to decide whether to skip rendering the element based on its visibility, which can be beneficial for enhancing page load times and interactivity.</div>
+<h3 id="all-most-similar-properties" class="preview-paragraph-34 preview-line 34" data_line_start="34" data_line_end="34" data_line="34,35" count_line="1">All Most Similar Properties</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>visibility</code></td>
+<td>Controls the visibility of an element.</td>
+<td><code>visibility</code> hides the element but still renders it completely.</td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Controls the display type of an element.</td>
+<td><code>display: none</code> removes the element from the document flow.</td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td>Controls the transparency of an element.</td>
+<td><code>opacity: 0</code> makes the element fully transparent but still rendered.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="browser-compatibility" class="preview-paragraph-42 preview-line 42" data_line_start="42" data_line_end="42" data_line="42,43" count_line="1">Browser Compatibility</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Browser</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>Supported from version 85</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>Supported from version 85</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>Not supported</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>Supported from version 14.1</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>Supported from version 71</td>
+</tr>
+</tbody>
+</table>
+<h3 id="in-javascript" class="preview-paragraph-52 preview-line 52" data_line_start="52" data_line_end="52" data_line="52,53" count_line="1">In JavaScript</h3>
+<div  class="preview-paragraph-54 preview-line 54 55 56 57 58 59 60 61 62 63 64 65 66" data_line_start="54" data_line_end="66" data_line="54,67" count_line="13" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-54 preview-line 54 55 56 57 58 59 60 61 62 63 64 65 66" data_line_start="54" data_line_end="66" data_line="54,67" count_line="13" style="overflow: auto; position: relative;"><pre><code class="hljs language-javascript"><span class="hljs-comment">// Select an element</span>
+<span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.my-element&#x27;</span>);
+
+<span class="hljs-comment">// Set content-visibility to auto</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">contentVisibility</span> = <span class="hljs-string">&#x27;auto&#x27;</span>;
+
+<span class="hljs-comment">// Set content-visibility to hidden</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">contentVisibility</span> = <span class="hljs-string">&#x27;hidden&#x27;</span>;
+
+<span class="hljs-comment">// Set content-visibility to visible</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">contentVisibility</span> = <span class="hljs-string">&#x27;visible&#x27;</span>;
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// Select an element
+const element = document.querySelector('.my-element');
+
+// Set content-visibility to auto
+element.style.contentVisibility = 'auto';
+
+// Set content-visibility to hidden
+element.style.contentVisibility = 'hidden';
+
+// Set content-visibility to visible
+element.style.contentVisibility = 'visible';
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// Select an element
+const element = document.querySelector('.my-element');
+
+// Set content-visibility to auto
+element.style.contentVisibility = 'auto';
+
+// Set content-visibility to hidden
+element.style.contentVisibility = 'hidden';
+
+// Set content-visibility to visible
+element.style.contentVisibility = 'visible';
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="example-code" class="preview-paragraph-68 preview-line 68" data_line_start="68" data_line_end="68" data_line="68,69" count_line="1">Example Code</h3>
+<div  class="preview-paragraph-70 preview-line 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147" data_line_start="70" data_line_end="147" data_line="70,148" count_line="78" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-70 preview-line 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147" data_line_start="70" data_line_end="147" data_line="70,148" count_line="78" style="overflow: auto; position: relative;"><pre><code class="hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Content Visibility Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f5f5f5</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: center;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-selector-class">.main-container</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">15px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">text-align</span>: center;
+        }
+
+        <span class="hljs-selector-class">.sub-container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> auto;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">8px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.555</span>);
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#dcdbdb</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+        }
+
+        <span class="hljs-selector-tag">h2</span> {
+            <span class="hljs-attribute">text-align</span>: center;
+        }
+
+        <span class="hljs-selector-class">.element-visible</span> {
+            <span class="hljs-attribute">content-visibility</span>: visible;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f0a</span>;
+        }
+
+        <span class="hljs-selector-class">.element-hidden</span> {
+            <span class="hljs-attribute">content-visibility</span>: hidden;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0af</span>;
+        }
+
+        <span class="hljs-selector-class">.element-auto</span> {
+            <span class="hljs-attribute">content-visibility</span>: auto;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fa0</span>;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Content Visibility<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>visible<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;element-visible&quot;</span>&gt;</span>This element is fully rendered.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>hidden<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;element-hidden&quot;</span>&gt;</span>This element is skipped during rendering but still affects layout.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;element-auto&quot;</span>&gt;</span>The browser determines if this element should be skipped.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Content Visibility Example&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sub-container {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+            border-radius: 20px;
+            background-color: #dcdbdb;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .element-visible {
+            content-visibility: visible;
+            padding: 20px;
+            background-color: #f0a;
+        }
+
+        .element-hidden {
+            content-visibility: hidden;
+            padding: 20px;
+            background-color: #0af;
+        }
+
+        .element-auto {
+            content-visibility: auto;
+            padding: 20px;
+            background-color: #fa0;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;Content Visibility&lt;/h1&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;visible&lt;/h2&gt;
+            &lt;div class=&quot;element-visible&quot;&gt;This element is fully rendered.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;hidden&lt;/h2&gt;
+            &lt;div class=&quot;element-hidden&quot;&gt;This element is skipped during rendering but still affects layout.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;auto&lt;/h2&gt;
+            &lt;div class=&quot;element-auto&quot;&gt;The browser determines if this element should be skipped.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Content Visibility Example&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sub-container {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+            border-radius: 20px;
+            background-color: #dcdbdb;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .element-visible {
+            content-visibility: visible;
+            padding: 20px;
+            background-color: #f0a;
+        }
+
+        .element-hidden {
+            content-visibility: hidden;
+            padding: 20px;
+            background-color: #0af;
+        }
+
+        .element-auto {
+            content-visibility: auto;
+            padding: 20px;
+            background-color: #fa0;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;Content Visibility&lt;/h1&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;visible&lt;/h2&gt;
+            &lt;div class=&quot;element-visible&quot;&gt;This element is fully rendered.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;hidden&lt;/h2&gt;
+            &lt;div class=&quot;element-hidden&quot;&gt;This element is skipped during rendering but still affects layout.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container&quot;&gt;
+            &lt;h2&gt;auto&lt;/h2&gt;
+            &lt;div class=&quot;element-auto&quot;&gt;The browser determines if this element should be skipped.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>cursor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div id="preview" class="preview scrollEditor">
+    <div id="container-ruller" />
+    <div id="preview-content">
+      <h1 type="title" class="main-title" id="cursor">
+cursor</h1>
+<h3 id="definition" class="preview-paragraph-0 preview-line 0" data_line_start="0" data_line_end="0" data_line="0,1" count_line="1">Definition</h3>
+<div class="preview-paragraph-2 preview-line 2" data_line_start="2" data_line_end="2" data_line="2,3" count_line="1">The <code>cursor</code> CSS property sets the type of cursor to be displayed when pointing over an element.</div>
+<h3 id="values" class="preview-paragraph-4 preview-line 4" data_line_start="4" data_line_end="4" data_line="4,5" count_line="1">Values</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auto</code></td>
+<td>Default cursor based on the browser.</td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>Platform-dependent default cursor, usually an arrow.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>No cursor is rendered.</td>
+</tr>
+<tr>
+<td><code>context-menu</code></td>
+<td>A context menu is available, usually a question mark or menu.</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>Help is available, usually a question mark.</td>
+</tr>
+<tr>
+<td><code>pointer</code></td>
+<td>Indicates a link, usually a pointing hand.</td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td>An action is in progress, but the user can still interact, usually a spinner.</td>
+</tr>
+<tr>
+<td><code>wait</code></td>
+<td>The program is busy, usually an hourglass or watch.</td>
+</tr>
+<tr>
+<td><code>cell</code></td>
+<td>Indicates a cell in a table.</td>
+</tr>
+<tr>
+<td><code>crosshair</code></td>
+<td>Indicates something can be selected or a precise location, usually a cross.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>Indicates text can be selected, usually an I-beam.</td>
+</tr>
+<tr>
+<td><code>vertical-text</code></td>
+<td>Indicates vertical text can be selected.</td>
+</tr>
+<tr>
+<td><code>alias</code></td>
+<td>Indicates an alias or shortcut is being created.</td>
+</tr>
+<tr>
+<td><code>copy</code></td>
+<td>Indicates something can be copied, usually a plus sign.</td>
+</tr>
+<tr>
+<td><code>move</code></td>
+<td>Indicates something can be moved.</td>
+</tr>
+<tr>
+<td><code>no-drop</code></td>
+<td>Indicates an item cannot be dropped, usually a hand with a no symbol.</td>
+</tr>
+<tr>
+<td><code>not-allowed</code></td>
+<td>Indicates the action is not allowed, usually a circle with a line through it.</td>
+</tr>
+<tr>
+<td><code>grab</code></td>
+<td>Indicates something can be grabbed.</td>
+</tr>
+<tr>
+<td><code>grabbing</code></td>
+<td>Indicates something is being grabbed.</td>
+</tr>
+<tr>
+<td><code>all-scroll</code></td>
+<td>Indicates scrolling in any direction.</td>
+</tr>
+<tr>
+<td><code>col-resize</code></td>
+<td>Indicates a column can be resized horizontally.</td>
+</tr>
+<tr>
+<td><code>row-resize</code></td>
+<td>Indicates a row can be resized vertically.</td>
+</tr>
+<tr>
+<td><code>n-resize</code></td>
+<td>Indicates northward (upward) movement for resizing.</td>
+</tr>
+<tr>
+<td><code>e-resize</code></td>
+<td>Indicates eastward (rightward) movement for resizing.</td>
+</tr>
+<tr>
+<td><code>s-resize</code></td>
+<td>Indicates southward (downward) movement for resizing.</td>
+</tr>
+<tr>
+<td><code>w-resize</code></td>
+<td>Indicates westward (leftward) movement for resizing.</td>
+</tr>
+<tr>
+<td><code>ne-resize</code></td>
+<td>Indicates northeast movement for resizing.</td>
+</tr>
+<tr>
+<td><code>nw-resize</code></td>
+<td>Indicates northwest movement for resizing.</td>
+</tr>
+<tr>
+<td><code>se-resize</code></td>
+<td>Indicates southeast movement for resizing.</td>
+</tr>
+<tr>
+<td><code>sw-resize</code></td>
+<td>Indicates southwest movement for resizing.</td>
+</tr>
+<tr>
+<td><code>ew-resize</code></td>
+<td>Indicates horizontal resizing.</td>
+</tr>
+<tr>
+<td><code>ns-resize</code></td>
+<td>Indicates vertical resizing.</td>
+</tr>
+<tr>
+<td><code>nesw-resize</code></td>
+<td>Indicates diagonal resizing from northeast to southwest.</td>
+</tr>
+<tr>
+<td><code>nwse-resize</code></td>
+<td>Indicates diagonal resizing from northwest to southeast.</td>
+</tr>
+<tr>
+<td><code>zoom-in</code></td>
+<td>Indicates zooming in.</td>
+</tr>
+<tr>
+<td><code>zoom-out</code></td>
+<td>Indicates zooming out.</td>
+</tr>
+<tr>
+<td><code>url('path')</code></td>
+<td>Specifies a custom cursor image using a URL.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example" class="preview-paragraph-46 preview-line 46" data_line_start="46" data_line_end="46" data_line="46,47" count_line="1">Example</h3>
+<div  class="preview-paragraph-48 preview-line 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197" data_line_start="48" data_line_end="197" data_line="48,198" count_line="150" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-48 preview-line 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197" data_line_start="48" data_line_end="197" data_line="48,198" count_line="150" style="overflow: auto; position: relative;"><pre><code class="hljs language-css"><span class="hljs-comment">/* Default cursor */</span>
+<span class="hljs-selector-class">.cursor-auto</span> {
+    <span class="hljs-attribute">cursor</span>: auto; <span class="hljs-comment">/* Default browser cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-default</span> {
+    <span class="hljs-attribute">cursor</span>: default; <span class="hljs-comment">/* Arrow cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-none</span> {
+    <span class="hljs-attribute">cursor</span>: none; <span class="hljs-comment">/* No cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-context-menu</span> {
+    <span class="hljs-attribute">cursor</span>: context-menu; <span class="hljs-comment">/* Context menu cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-help</span> {
+    <span class="hljs-attribute">cursor</span>: help; <span class="hljs-comment">/* Help cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-pointer</span> {
+    <span class="hljs-attribute">cursor</span>: pointer; <span class="hljs-comment">/* Hand cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-progress</span> {
+    <span class="hljs-attribute">cursor</span>: progress; <span class="hljs-comment">/* Progress cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-wait</span> {
+    <span class="hljs-attribute">cursor</span>: wait; <span class="hljs-comment">/* Wait cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-cell</span> {
+    <span class="hljs-attribute">cursor</span>: cell; <span class="hljs-comment">/* Cell cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-crosshair</span> {
+    <span class="hljs-attribute">cursor</span>: crosshair; <span class="hljs-comment">/* Crosshair cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-text</span> {
+    <span class="hljs-attribute">cursor</span>: text; <span class="hljs-comment">/* Text cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-vertical-text</span> {
+    <span class="hljs-attribute">cursor</span>: vertical-text; <span class="hljs-comment">/* Vertical text cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-alias</span> {
+    <span class="hljs-attribute">cursor</span>: alias; <span class="hljs-comment">/* Alias cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-copy</span> {
+    <span class="hljs-attribute">cursor</span>: copy; <span class="hljs-comment">/* Copy cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-move</span> {
+    <span class="hljs-attribute">cursor</span>: move; <span class="hljs-comment">/* Move cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-no-drop</span> {
+    <span class="hljs-attribute">cursor</span>: no-drop; <span class="hljs-comment">/* No drop cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-not-allowed</span> {
+    <span class="hljs-attribute">cursor</span>: not-allowed; <span class="hljs-comment">/* Not allowed cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-grab</span> {
+    <span class="hljs-attribute">cursor</span>: grab; <span class="hljs-comment">/* Grab cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-grabbing</span> {
+    <span class="hljs-attribute">cursor</span>: grabbing; <span class="hljs-comment">/* Grabbing cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-all-scroll</span> {
+    <span class="hljs-attribute">cursor</span>: all-scroll; <span class="hljs-comment">/* All scroll cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-col-resize</span> {
+    <span class="hljs-attribute">cursor</span>: col-resize; <span class="hljs-comment">/* Column resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-row-resize</span> {
+    <span class="hljs-attribute">cursor</span>: row-resize; <span class="hljs-comment">/* Row resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-n-resize</span> {
+    <span class="hljs-attribute">cursor</span>: n-resize; <span class="hljs-comment">/* North resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-e-resize</span> {
+    <span class="hljs-attribute">cursor</span>: e-resize; <span class="hljs-comment">/* East resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-s-resize</span> {
+    <span class="hljs-attribute">cursor</span>: s-resize; <span class="hljs-comment">/* South resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-w-resize</span> {
+    <span class="hljs-attribute">cursor</span>: w-resize; <span class="hljs-comment">/* West resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-ne-resize</span> {
+    <span class="hljs-attribute">cursor</span>: ne-resize; <span class="hljs-comment">/* Northeast resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-nw-resize</span> {
+    <span class="hljs-attribute">cursor</span>: nw-resize; <span class="hljs-comment">/* Northwest resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-se-resize</span> {
+    <span class="hljs-attribute">cursor</span>: se-resize; <span class="hljs-comment">/* Southeast resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-sw-resize</span> {
+    <span class="hljs-attribute">cursor</span>: sw-resize; <span class="hljs-comment">/* Southwest resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-ew-resize</span> {
+    <span class="hljs-attribute">cursor</span>: ew-resize; <span class="hljs-comment">/* East-west resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-ns-resize</span> {
+    <span class="hljs-attribute">cursor</span>: ns-resize; <span class="hljs-comment">/* North-south resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-nesw-resize</span> {
+    <span class="hljs-attribute">cursor</span>: nesw-resize; <span class="hljs-comment">/* Northeast-southwest resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-nwse-resize</span> {
+    <span class="hljs-attribute">cursor</span>: nwse-resize; <span class="hljs-comment">/* Northwest-southeast resize cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-zoom-in</span> {
+    <span class="hljs-attribute">cursor</span>: zoom-in; <span class="hljs-comment">/* Zoom in cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-zoom-out</span> {
+    <span class="hljs-attribute">cursor</span>: zoom-out; <span class="hljs-comment">/* Zoom out cursor */</span>
+}
+
+<span class="hljs-selector-class">.cursor-custom</span> {
+    <span class="hljs-attribute">cursor</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;custom-cursor.png&#x27;</span>), auto; <span class="hljs-comment">/* Custom cursor image */</span>
+}
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="/* Default cursor */
+.cursor-auto {
+    cursor: auto; /* Default browser cursor */
+}
+
+.cursor-default {
+    cursor: default; /* Arrow cursor */
+}
+
+.cursor-none {
+    cursor: none; /* No cursor */
+}
+
+.cursor-context-menu {
+    cursor: context-menu; /* Context menu cursor */
+}
+
+.cursor-help {
+    cursor: help; /* Help cursor */
+}
+
+.cursor-pointer {
+    cursor: pointer; /* Hand cursor */
+}
+
+.cursor-progress {
+    cursor: progress; /* Progress cursor */
+}
+
+.cursor-wait {
+    cursor: wait; /* Wait cursor */
+}
+
+.cursor-cell {
+    cursor: cell; /* Cell cursor */
+}
+
+.cursor-crosshair {
+    cursor: crosshair; /* Crosshair cursor */
+}
+
+.cursor-text {
+    cursor: text; /* Text cursor */
+}
+
+.cursor-vertical-text {
+    cursor: vertical-text; /* Vertical text cursor */
+}
+
+.cursor-alias {
+    cursor: alias; /* Alias cursor */
+}
+
+.cursor-copy {
+    cursor: copy; /* Copy cursor */
+}
+
+.cursor-move {
+    cursor: move; /* Move cursor */
+}
+
+.cursor-no-drop {
+    cursor: no-drop; /* No drop cursor */
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.cursor-grab {
+    cursor: grab; /* Grab cursor */
+}
+
+.cursor-grabbing {
+    cursor: grabbing; /* Grabbing cursor */
+}
+
+.cursor-all-scroll {
+    cursor: all-scroll; /* All scroll cursor */
+}
+
+.cursor-col-resize {
+    cursor: col-resize; /* Column resize cursor */
+}
+
+.cursor-row-resize {
+    cursor: row-resize; /* Row resize cursor */
+}
+
+.cursor-n-resize {
+    cursor: n-resize; /* North resize cursor */
+}
+
+.cursor-e-resize {
+    cursor: e-resize; /* East resize cursor */
+}
+
+.cursor-s-resize {
+    cursor: s-resize; /* South resize cursor */
+}
+
+.cursor-w-resize {
+    cursor: w-resize; /* West resize cursor */
+}
+
+.cursor-ne-resize {
+    cursor: ne-resize; /* Northeast resize cursor */
+}
+
+.cursor-nw-resize {
+    cursor: nw-resize; /* Northwest resize cursor */
+}
+
+.cursor-se-resize {
+    cursor: se-resize; /* Southeast resize cursor */
+}
+
+.cursor-sw-resize {
+    cursor: sw-resize; /* Southwest resize cursor */
+}
+
+.cursor-ew-resize {
+    cursor: ew-resize; /* East-west resize cursor */
+}
+
+.cursor-ns-resize {
+    cursor: ns-resize; /* North-south resize cursor */
+}
+
+.cursor-nesw-resize {
+    cursor: nesw-resize; /* Northeast-southwest resize cursor */
+}
+
+.cursor-nwse-resize {
+    cursor: nwse-resize; /* Northwest-southeast resize cursor */
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in; /* Zoom in cursor */
+}
+
+.cursor-zoom-out {
+    cursor: zoom-out; /* Zoom out cursor */
+}
+
+.cursor-custom {
+    cursor: url('custom-cursor.png'), auto; /* Custom cursor image */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="/* Default cursor */
+.cursor-auto {
+    cursor: auto; /* Default browser cursor */
+}
+
+.cursor-default {
+    cursor: default; /* Arrow cursor */
+}
+
+.cursor-none {
+    cursor: none; /* No cursor */
+}
+
+.cursor-context-menu {
+    cursor: context-menu; /* Context menu cursor */
+}
+
+.cursor-help {
+    cursor: help; /* Help cursor */
+}
+
+.cursor-pointer {
+    cursor: pointer; /* Hand cursor */
+}
+
+.cursor-progress {
+    cursor: progress; /* Progress cursor */
+}
+
+.cursor-wait {
+    cursor: wait; /* Wait cursor */
+}
+
+.cursor-cell {
+    cursor: cell; /* Cell cursor */
+}
+
+.cursor-crosshair {
+    cursor: crosshair; /* Crosshair cursor */
+}
+
+.cursor-text {
+    cursor: text; /* Text cursor */
+}
+
+.cursor-vertical-text {
+    cursor: vertical-text; /* Vertical text cursor */
+}
+
+.cursor-alias {
+    cursor: alias; /* Alias cursor */
+}
+
+.cursor-copy {
+    cursor: copy; /* Copy cursor */
+}
+
+.cursor-move {
+    cursor: move; /* Move cursor */
+}
+
+.cursor-no-drop {
+    cursor: no-drop; /* No drop cursor */
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.cursor-grab {
+    cursor: grab; /* Grab cursor */
+}
+
+.cursor-grabbing {
+    cursor: grabbing; /* Grabbing cursor */
+}
+
+.cursor-all-scroll {
+    cursor: all-scroll; /* All scroll cursor */
+}
+
+.cursor-col-resize {
+    cursor: col-resize; /* Column resize cursor */
+}
+
+.cursor-row-resize {
+    cursor: row-resize; /* Row resize cursor */
+}
+
+.cursor-n-resize {
+    cursor: n-resize; /* North resize cursor */
+}
+
+.cursor-e-resize {
+    cursor: e-resize; /* East resize cursor */
+}
+
+.cursor-s-resize {
+    cursor: s-resize; /* South resize cursor */
+}
+
+.cursor-w-resize {
+    cursor: w-resize; /* West resize cursor */
+}
+
+.cursor-ne-resize {
+    cursor: ne-resize; /* Northeast resize cursor */
+}
+
+.cursor-nw-resize {
+    cursor: nw-resize; /* Northwest resize cursor */
+}
+
+.cursor-se-resize {
+    cursor: se-resize; /* Southeast resize cursor */
+}
+
+.cursor-sw-resize {
+    cursor: sw-resize; /* Southwest resize cursor */
+}
+
+.cursor-ew-resize {
+    cursor: ew-resize; /* East-west resize cursor */
+}
+
+.cursor-ns-resize {
+    cursor: ns-resize; /* North-south resize cursor */
+}
+
+.cursor-nesw-resize {
+    cursor: nesw-resize; /* Northeast-southwest resize cursor */
+}
+
+.cursor-nwse-resize {
+    cursor: nwse-resize; /* Northwest-southeast resize cursor */
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in; /* Zoom in cursor */
+}
+
+.cursor-zoom-out {
+    cursor: zoom-out; /* Zoom out cursor */
+}
+
+.cursor-custom {
+    cursor: url('custom-cursor.png'), auto; /* Custom cursor image */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="description" class="preview-paragraph-199 preview-line 199" data_line_start="199" data_line_end="199" data_line="199,200" count_line="1">Description</h3>
+<div class="preview-paragraph-201 preview-line 201" data_line_start="201" data_line_end="201" data_line="201,202" count_line="1">The <code>cursor</code> property allows you to specify the type of cursor that should be displayed when the mouse pointer is over an element. This can enhance user experience by providing visual feedback on what action can be performed. You can use predefined cursor types or custom cursor images.</div>
+<div class="preview-paragraph-203 preview-line 203" data_line_start="203" data_line_end="203" data_line="203,204" count_line="1">To implement <code>cursor</code>:</div>
+<ol class="preview-paragraph-205 preview-line 205 206 207" data_line_start="205" data_line_end="207" data_line="205,208" count_line="3">
+<li>Choose the appropriate cursor type from the predefined list or provide a URL to a custom cursor image.</li>
+<li>Apply the cursor type to the desired element using the <code>cursor</code> property in your CSS.</li>
+</ol>
+<h3 id="all-most-similar-properties" class="preview-paragraph-208 preview-line 208" data_line_start="208" data_line_end="208" data_line="208,209" count_line="1">All Most Similar Properties</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pointer-events</code></td>
+<td>Specifies under what circumstances (if any) a particular graphic element can become the target of mouse events.</td>
+<td>Controls whether or not an element can be the target of pointer events, while <code>cursor</code> changes the cursor's appearance.</td>
+</tr>
+<tr>
+<td><code>user-select</code></td>
+<td>Controls the user's ability to select text.</td>
+<td>Affects text selection behavior, while <code>cursor</code> affects the cursor's appearance.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="browser-compatibility" class="preview-paragraph-215 preview-line 215" data_line_start="215" data_line_end="215" data_line="215,216" count_line="1">Browser Compatibility</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Browser</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>Supported from version 1</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>Supported from version 12</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>Supported from version 1.5</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>Supported from version 3</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>Supported from version 9.2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="in-javascript" class="preview-paragraph-225 preview-line 225" data_line_start="225" data_line_end="225" data_line="225,226" count_line="1">In JavaScript</h3>
+<div  class="preview-paragraph-227 preview-line 227 228 229 230 231 232 233 234 235 236 237 238 239" data_line_start="227" data_line_end="239" data_line="227,240" count_line="13" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-227 preview-line 227 228 229 230 231 232 233 234 235 236 237 238 239" data_line_start="227" data_line_end="239" data_line="227,240" count_line="13" style="overflow: auto; position: relative;"><pre><code class="hljs language-javascript"><span class="hljs-comment">// Select an element</span>
+<span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.my-element&#x27;</span>);
+
+<span class="hljs-comment">// Set cursor to pointer</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;pointer&#x27;</span>;
+
+<span class="hljs-comment">// Set cursor to custom cursor</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;url(&quot;custom-cursor.png&quot;), auto&#x27;</span>;
+
+<span class="hljs-comment">// Reset cursor to default</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;default&#x27;</span>;
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// Select an element
+const element = document.querySelector('.my-element');
+
+// Set cursor to pointer
+element.style.cursor = 'pointer';
+
+// Set cursor to custom cursor
+element.style.cursor = 'url(&quot;custom-cursor.png&quot;), auto';
+
+// Reset cursor to default
+element.style.cursor = 'default';
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// Select an element
+const element = document.querySelector('.my-element');
+
+// Set cursor to pointer
+element.style.cursor = 'pointer';
+
+// Set cursor to custom cursor
+element.style.cursor = 'url(&quot;custom-cursor.png&quot;), auto';
+
+// Reset cursor to default
+element.style.cursor = 'default';
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="example-code" class="preview-paragraph-241 preview-line 241" data_line_start="241" data_line_end="241" data_line="241,242" count_line="1">Example Code</h3>
+<div  class="preview-paragraph-243 preview-line 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590" data_line_start="243" data_line_end="590" data_line="243,591" count_line="348" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-243 preview-line 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590" data_line_start="243" data_line_end="590" data_line="243,591" count_line="348" style="overflow: auto; position: relative;"><pre><code class="hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Cursor Property Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+            <span class="hljs-attribute">background-color</span>: ##<span class="hljs-number">#f5f5f5</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: center;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-selector-class">.main-container</span> {
+            <span class="hljs-attribute">background-color</span>: ##<span class="hljs-number">#fff</span>;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">15px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">text-align</span>: center;
+        }
+
+        <span class="hljs-selector-class">.sub-container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> auto;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">8px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.555</span>);
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: ##<span class="hljs-number">#dcdbdb</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+        }
+
+        <span class="hljs-selector-tag">h2</span> {
+            <span class="hljs-attribute">text-align</span>: center;
+        }
+
+        <span class="hljs-selector-class">.cursor-auto</span> {
+            <span class="hljs-attribute">cursor</span>: auto;
+        }
+
+        <span class="hljs-selector-class">.cursor-default</span> {
+            <span class="hljs-attribute">cursor</span>: default;
+        }
+
+        <span class="hljs-selector-class">.cursor-none</span> {
+            <span class="hljs-attribute">cursor</span>: none;
+        }
+
+        <span class="hljs-selector-class">.cursor-context-menu</span> {
+            <span class="hljs-attribute">cursor</span>: context-menu;
+        }
+
+        <span class="hljs-selector-class">.cursor-help</span> {
+            <span class="hljs-attribute">cursor</span>: help;
+        }
+
+        <span class="hljs-selector-class">.cursor-pointer</span> {
+            <span class="hljs-attribute">cursor</span>: pointer;
+        }
+
+        <span class="hljs-selector-class">.cursor-progress</span> {
+            <span class="hljs-attribute">cursor</span>: progress;
+        }
+
+        <span class="hljs-selector-class">.cursor-wait</span> {
+            <span class="hljs-attribute">cursor</span>
+
+: wait;
+        }
+
+        <span class="hljs-selector-class">.cursor-cell</span> {
+            <span class="hljs-attribute">cursor</span>: cell;
+        }
+
+        <span class="hljs-selector-class">.cursor-crosshair</span> {
+            <span class="hljs-attribute">cursor</span>: crosshair;
+        }
+
+        <span class="hljs-selector-class">.cursor-text</span> {
+            <span class="hljs-attribute">cursor</span>: text;
+        }
+
+        <span class="hljs-selector-class">.cursor-vertical-text</span> {
+            <span class="hljs-attribute">cursor</span>: vertical-text;
+        }
+
+        <span class="hljs-selector-class">.cursor-alias</span> {
+            <span class="hljs-attribute">cursor</span>: alias;
+        }
+
+        <span class="hljs-selector-class">.cursor-copy</span> {
+            <span class="hljs-attribute">cursor</span>: copy;
+        }
+
+        <span class="hljs-selector-class">.cursor-move</span> {
+            <span class="hljs-attribute">cursor</span>: move;
+        }
+
+        <span class="hljs-selector-class">.cursor-no-drop</span> {
+            <span class="hljs-attribute">cursor</span>: no-drop;
+        }
+
+        <span class="hljs-selector-class">.cursor-not-allowed</span> {
+            <span class="hljs-attribute">cursor</span>: not-allowed;
+        }
+
+        <span class="hljs-selector-class">.cursor-grab</span> {
+            <span class="hljs-attribute">cursor</span>: grab;
+        }
+
+        <span class="hljs-selector-class">.cursor-grabbing</span> {
+            <span class="hljs-attribute">cursor</span>: grabbing;
+        }
+
+        <span class="hljs-selector-class">.cursor-all-scroll</span> {
+            <span class="hljs-attribute">cursor</span>: all-scroll;
+        }
+
+        <span class="hljs-selector-class">.cursor-col-resize</span> {
+            <span class="hljs-attribute">cursor</span>: col-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-row-resize</span> {
+            <span class="hljs-attribute">cursor</span>: row-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-n-resize</span> {
+            <span class="hljs-attribute">cursor</span>: n-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-e-resize</span> {
+            <span class="hljs-attribute">cursor</span>: e-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-s-resize</span> {
+            <span class="hljs-attribute">cursor</span>: s-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-w-resize</span> {
+            <span class="hljs-attribute">cursor</span>: w-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-ne-resize</span> {
+            <span class="hljs-attribute">cursor</span>: ne-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-nw-resize</span> {
+            <span class="hljs-attribute">cursor</span>: nw-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-se-resize</span> {
+            <span class="hljs-attribute">cursor</span>: se-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-sw-resize</span> {
+            <span class="hljs-attribute">cursor</span>: sw-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-ew-resize</span> {
+            <span class="hljs-attribute">cursor</span>: ew-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-ns-resize</span> {
+            <span class="hljs-attribute">cursor</span>: ns-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-nesw-resize</span> {
+            <span class="hljs-attribute">cursor</span>: nesw-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-nwse-resize</span> {
+            <span class="hljs-attribute">cursor</span>: nwse-resize;
+        }
+
+        <span class="hljs-selector-class">.cursor-zoom-in</span> {
+            <span class="hljs-attribute">cursor</span>: zoom-in;
+        }
+
+        <span class="hljs-selector-class">.cursor-zoom-out</span> {
+            <span class="hljs-attribute">cursor</span>: zoom-out;
+        }
+
+        <span class="hljs-selector-class">.cursor-custom</span> {
+            <span class="hljs-attribute">cursor</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;custom-cursor.png&#x27;</span>), auto;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Cursor Property Examples<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-auto&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the auto cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-default&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>default<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the default cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-none&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>none<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see no cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-context-menu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>context-menu<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the context-menu cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-help&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>help<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the help cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-pointer&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>pointer<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the pointer cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-progress&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>progress<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the progress cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-wait&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>wait<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the wait cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-cell&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>cell<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the cell cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-crosshair&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>crosshair<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the crosshair cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-text&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the text cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-vertical-text&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>vertical-text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the vertical-text cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-alias&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>alias<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the alias cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-copy&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>copy<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the copy cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-move&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>move<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the move cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-no-drop&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>no-drop<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the no-drop cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-not-allowed&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>not-allowed<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the not-allowed cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-grab&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>grab<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the grab cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-grabbing&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>grabbing<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the grabbing cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-all-scroll&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>all-scroll<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the all-scroll cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-col-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>col-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the col-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-row-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>row-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the row-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-n-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>n-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the n-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-e-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>e-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the e-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-s-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>s-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the s-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-w-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>w-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the w-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-ne-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ne-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the ne-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-nw-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>nw-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the nw-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-se-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>se-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the se-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-sw-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>sw-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the sw-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-ew-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ew-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the ew-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-ns-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ns-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the ns-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-nesw-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>nesw-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the nesw-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-nwse-resize&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>nwse-resize<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the nwse-resize cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-zoom-in&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>zoom-in<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the zoom-in cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container cursor-zoom-out&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>zoom-out<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the zoom-out cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
+
+sub-container cursor-custom&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>custom<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hover over this text to see the custom cursor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Cursor Property Example&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: ###f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            background-color: ###fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sub-container {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+            border-radius: 20px;
+            background-color: ###dcdbdb;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .cursor-auto {
+            cursor: auto;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .cursor-none {
+            cursor: none;
+        }
+
+        .cursor-context-menu {
+            cursor: context-menu;
+        }
+
+        .cursor-help {
+            cursor: help;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-progress {
+            cursor: progress;
+        }
+
+        .cursor-wait {
+            cursor
+
+: wait;
+        }
+
+        .cursor-cell {
+            cursor: cell;
+        }
+
+        .cursor-crosshair {
+            cursor: crosshair;
+        }
+
+        .cursor-text {
+            cursor: text;
+        }
+
+        .cursor-vertical-text {
+            cursor: vertical-text;
+        }
+
+        .cursor-alias {
+            cursor: alias;
+        }
+
+        .cursor-copy {
+            cursor: copy;
+        }
+
+        .cursor-move {
+            cursor: move;
+        }
+
+        .cursor-no-drop {
+            cursor: no-drop;
+        }
+
+        .cursor-not-allowed {
+            cursor: not-allowed;
+        }
+
+        .cursor-grab {
+            cursor: grab;
+        }
+
+        .cursor-grabbing {
+            cursor: grabbing;
+        }
+
+        .cursor-all-scroll {
+            cursor: all-scroll;
+        }
+
+        .cursor-col-resize {
+            cursor: col-resize;
+        }
+
+        .cursor-row-resize {
+            cursor: row-resize;
+        }
+
+        .cursor-n-resize {
+            cursor: n-resize;
+        }
+
+        .cursor-e-resize {
+            cursor: e-resize;
+        }
+
+        .cursor-s-resize {
+            cursor: s-resize;
+        }
+
+        .cursor-w-resize {
+            cursor: w-resize;
+        }
+
+        .cursor-ne-resize {
+            cursor: ne-resize;
+        }
+
+        .cursor-nw-resize {
+            cursor: nw-resize;
+        }
+
+        .cursor-se-resize {
+            cursor: se-resize;
+        }
+
+        .cursor-sw-resize {
+            cursor: sw-resize;
+        }
+
+        .cursor-ew-resize {
+            cursor: ew-resize;
+        }
+
+        .cursor-ns-resize {
+            cursor: ns-resize;
+        }
+
+        .cursor-nesw-resize {
+            cursor: nesw-resize;
+        }
+
+        .cursor-nwse-resize {
+            cursor: nwse-resize;
+        }
+
+        .cursor-zoom-in {
+            cursor: zoom-in;
+        }
+
+        .cursor-zoom-out {
+            cursor: zoom-out;
+        }
+
+        .cursor-custom {
+            cursor: url('custom-cursor.png'), auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;Cursor Property Examples&lt;/h1&gt;
+        &lt;div class=&quot;sub-container cursor-auto&quot;&gt;
+            &lt;h2&gt;auto&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the auto cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-default&quot;&gt;
+            &lt;h2&gt;default&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the default cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-none&quot;&gt;
+            &lt;h2&gt;none&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see no cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-context-menu&quot;&gt;
+            &lt;h2&gt;context-menu&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the context-menu cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-help&quot;&gt;
+            &lt;h2&gt;help&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the help cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-pointer&quot;&gt;
+            &lt;h2&gt;pointer&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the pointer cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-progress&quot;&gt;
+            &lt;h2&gt;progress&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the progress cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-wait&quot;&gt;
+            &lt;h2&gt;wait&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the wait cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-cell&quot;&gt;
+            &lt;h2&gt;cell&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the cell cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-crosshair&quot;&gt;
+            &lt;h2&gt;crosshair&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the crosshair cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-text&quot;&gt;
+            &lt;h2&gt;text&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the text cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-vertical-text&quot;&gt;
+            &lt;h2&gt;vertical-text&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the vertical-text cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-alias&quot;&gt;
+            &lt;h2&gt;alias&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the alias cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-copy&quot;&gt;
+            &lt;h2&gt;copy&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the copy cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-move&quot;&gt;
+            &lt;h2&gt;move&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the move cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-no-drop&quot;&gt;
+            &lt;h2&gt;no-drop&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the no-drop cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-not-allowed&quot;&gt;
+            &lt;h2&gt;not-allowed&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the not-allowed cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-grab&quot;&gt;
+            &lt;h2&gt;grab&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the grab cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-grabbing&quot;&gt;
+            &lt;h2&gt;grabbing&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the grabbing cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-all-scroll&quot;&gt;
+            &lt;h2&gt;all-scroll&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the all-scroll cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-col-resize&quot;&gt;
+            &lt;h2&gt;col-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the col-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-row-resize&quot;&gt;
+            &lt;h2&gt;row-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the row-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-n-resize&quot;&gt;
+            &lt;h2&gt;n-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the n-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-e-resize&quot;&gt;
+            &lt;h2&gt;e-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the e-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-s-resize&quot;&gt;
+            &lt;h2&gt;s-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the s-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-w-resize&quot;&gt;
+            &lt;h2&gt;w-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the w-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ne-resize&quot;&gt;
+            &lt;h2&gt;ne-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ne-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nw-resize&quot;&gt;
+            &lt;h2&gt;nw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-se-resize&quot;&gt;
+            &lt;h2&gt;se-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the se-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-sw-resize&quot;&gt;
+            &lt;h2&gt;sw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the sw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ew-resize&quot;&gt;
+            &lt;h2&gt;ew-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ew-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ns-resize&quot;&gt;
+            &lt;h2&gt;ns-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ns-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nesw-resize&quot;&gt;
+            &lt;h2&gt;nesw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nesw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nwse-resize&quot;&gt;
+            &lt;h2&gt;nwse-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nwse-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-zoom-in&quot;&gt;
+            &lt;h2&gt;zoom-in&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the zoom-in cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-zoom-out&quot;&gt;
+            &lt;h2&gt;zoom-out&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the zoom-out cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;
+
+sub-container cursor-custom&quot;&gt;
+            &lt;h2&gt;custom&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the custom cursor.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Cursor Property Example&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: ###f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            background-color: ###fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sub-container {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+            border-radius: 20px;
+            background-color: ###dcdbdb;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .cursor-auto {
+            cursor: auto;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .cursor-none {
+            cursor: none;
+        }
+
+        .cursor-context-menu {
+            cursor: context-menu;
+        }
+
+        .cursor-help {
+            cursor: help;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-progress {
+            cursor: progress;
+        }
+
+        .cursor-wait {
+            cursor
+
+: wait;
+        }
+
+        .cursor-cell {
+            cursor: cell;
+        }
+
+        .cursor-crosshair {
+            cursor: crosshair;
+        }
+
+        .cursor-text {
+            cursor: text;
+        }
+
+        .cursor-vertical-text {
+            cursor: vertical-text;
+        }
+
+        .cursor-alias {
+            cursor: alias;
+        }
+
+        .cursor-copy {
+            cursor: copy;
+        }
+
+        .cursor-move {
+            cursor: move;
+        }
+
+        .cursor-no-drop {
+            cursor: no-drop;
+        }
+
+        .cursor-not-allowed {
+            cursor: not-allowed;
+        }
+
+        .cursor-grab {
+            cursor: grab;
+        }
+
+        .cursor-grabbing {
+            cursor: grabbing;
+        }
+
+        .cursor-all-scroll {
+            cursor: all-scroll;
+        }
+
+        .cursor-col-resize {
+            cursor: col-resize;
+        }
+
+        .cursor-row-resize {
+            cursor: row-resize;
+        }
+
+        .cursor-n-resize {
+            cursor: n-resize;
+        }
+
+        .cursor-e-resize {
+            cursor: e-resize;
+        }
+
+        .cursor-s-resize {
+            cursor: s-resize;
+        }
+
+        .cursor-w-resize {
+            cursor: w-resize;
+        }
+
+        .cursor-ne-resize {
+            cursor: ne-resize;
+        }
+
+        .cursor-nw-resize {
+            cursor: nw-resize;
+        }
+
+        .cursor-se-resize {
+            cursor: se-resize;
+        }
+
+        .cursor-sw-resize {
+            cursor: sw-resize;
+        }
+
+        .cursor-ew-resize {
+            cursor: ew-resize;
+        }
+
+        .cursor-ns-resize {
+            cursor: ns-resize;
+        }
+
+        .cursor-nesw-resize {
+            cursor: nesw-resize;
+        }
+
+        .cursor-nwse-resize {
+            cursor: nwse-resize;
+        }
+
+        .cursor-zoom-in {
+            cursor: zoom-in;
+        }
+
+        .cursor-zoom-out {
+            cursor: zoom-out;
+        }
+
+        .cursor-custom {
+            cursor: url('custom-cursor.png'), auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;Cursor Property Examples&lt;/h1&gt;
+        &lt;div class=&quot;sub-container cursor-auto&quot;&gt;
+            &lt;h2&gt;auto&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the auto cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-default&quot;&gt;
+            &lt;h2&gt;default&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the default cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-none&quot;&gt;
+            &lt;h2&gt;none&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see no cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-context-menu&quot;&gt;
+            &lt;h2&gt;context-menu&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the context-menu cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-help&quot;&gt;
+            &lt;h2&gt;help&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the help cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-pointer&quot;&gt;
+            &lt;h2&gt;pointer&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the pointer cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-progress&quot;&gt;
+            &lt;h2&gt;progress&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the progress cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-wait&quot;&gt;
+            &lt;h2&gt;wait&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the wait cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-cell&quot;&gt;
+            &lt;h2&gt;cell&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the cell cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-crosshair&quot;&gt;
+            &lt;h2&gt;crosshair&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the crosshair cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-text&quot;&gt;
+            &lt;h2&gt;text&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the text cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-vertical-text&quot;&gt;
+            &lt;h2&gt;vertical-text&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the vertical-text cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-alias&quot;&gt;
+            &lt;h2&gt;alias&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the alias cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-copy&quot;&gt;
+            &lt;h2&gt;copy&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the copy cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-move&quot;&gt;
+            &lt;h2&gt;move&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the move cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-no-drop&quot;&gt;
+            &lt;h2&gt;no-drop&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the no-drop cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-not-allowed&quot;&gt;
+            &lt;h2&gt;not-allowed&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the not-allowed cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-grab&quot;&gt;
+            &lt;h2&gt;grab&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the grab cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-grabbing&quot;&gt;
+            &lt;h2&gt;grabbing&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the grabbing cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-all-scroll&quot;&gt;
+            &lt;h2&gt;all-scroll&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the all-scroll cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-col-resize&quot;&gt;
+            &lt;h2&gt;col-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the col-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-row-resize&quot;&gt;
+            &lt;h2&gt;row-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the row-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-n-resize&quot;&gt;
+            &lt;h2&gt;n-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the n-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-e-resize&quot;&gt;
+            &lt;h2&gt;e-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the e-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-s-resize&quot;&gt;
+            &lt;h2&gt;s-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the s-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-w-resize&quot;&gt;
+            &lt;h2&gt;w-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the w-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ne-resize&quot;&gt;
+            &lt;h2&gt;ne-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ne-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nw-resize&quot;&gt;
+            &lt;h2&gt;nw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-se-resize&quot;&gt;
+            &lt;h2&gt;se-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the se-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-sw-resize&quot;&gt;
+            &lt;h2&gt;sw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the sw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ew-resize&quot;&gt;
+            &lt;h2&gt;ew-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ew-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-ns-resize&quot;&gt;
+            &lt;h2&gt;ns-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the ns-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nesw-resize&quot;&gt;
+            &lt;h2&gt;nesw-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nesw-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-nwse-resize&quot;&gt;
+            &lt;h2&gt;nwse-resize&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the nwse-resize cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-zoom-in&quot;&gt;
+            &lt;h2&gt;zoom-in&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the zoom-in cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container cursor-zoom-out&quot;&gt;
+            &lt;h2&gt;zoom-out&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the zoom-out cursor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;
+
+sub-container cursor-custom&quot;&gt;
+            &lt;h2&gt;custom&lt;/h2&gt;
+            &lt;p&gt;Hover over this text to see the custom cursor.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div>
+    </div>
+  </div>
+</body>
+</html>

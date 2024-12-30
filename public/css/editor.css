@@ -1,0 +1,162 @@
+body
+{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1A252F;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 6vw auto 3vw;
+    grid-template-areas: 
+    "h h h h h h"
+    "ide ide ide ide ide ide"
+    "f f f f f  f";
+
+    /* decoration   */
+
+    margin: .5vw 1vw .5vw 1vw;
+    border-radius: 20px;
+    background-color: #DAF7A6;
+    /* box-shadow: (50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+}
+
+header
+{
+    grid-area: h; 
+}
+
+header h1
+{
+    text-align: center;
+    color:  #1A252F;
+    
+}
+
+.ide
+{
+    grid-area: ide; 
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 77vh;
+    grid-template-areas: "ip ip op op op op";
+}
+
+.input
+{
+    grid-area: ip;
+    background-color:#292d3e;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 30px auto;
+    grid-template-areas: "tpan tpan tpan tpan tpan tpan"
+    "ipan ipan ipan ipan ipan ipan";
+}
+
+.top-panel
+{
+    grid-area: tpan;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "s1 s2";
+
+
+}
+
+.run-button,.live-button{
+    width: max(7vw,100px);
+    height: max(1.8vw,30px);
+    border-radius: 1vw ;
+    border: none;
+    background-image: linear-gradient( #2C3E50, #506a83, #2C3E50);
+    color: cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow:rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.568) 0px -3px 0px 0px inset;
+    transition: .2s ease-in;
+}
+
+.run-button:hover,.live-button:hover{
+    scale: 1.02;
+}
+.sec_1
+{
+    grid-area: s1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec_2
+{
+    grid-area: s2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-panel
+{
+    grid-area: ipan;
+}
+.output
+{
+    grid-area: op;  
+    background-color: white;
+}
+
+#output
+{
+    width: calc(100% - 2px);
+    height: calc(100% - 3px);
+    margin:0px;
+    border: none;
+    border: 1px dotted rgb(176, 176, 176);
+}
+
+#output:hover
+{
+    border: 2px dotted black;
+}
+.input-panel textarea
+{
+    width: 95% !important;
+    height: 100% !important;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color:#ECF0F1;
+    overflow-y: hidden;
+}
+footer{
+    grid-area: f; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    text-align: center;
+
+}
+
+@media(max-width:900px)
+{
+    .ide
+    {
+        grid-area: ide; 
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 100vh 100vh;
+        grid-template-areas: "ip ip ip ip ip ip"
+        "op op op op op op";
+    }
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: #292d3e;
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div id="preview" class="preview scrollEditor">
+    <div id="container-ruller" />
+    <div id="preview-content">
+      <h1 type="title" class="main-title" id="display">
+display</h1>
+<h3 id="definition" class="preview-paragraph-0 preview-line 0" data_line_start="0" data_line_end="0" data_line="0,1" count_line="1">Definition</h3>
+<div class="preview-paragraph-1 preview-line 1" data_line_start="1" data_line_end="1" data_line="1,2" count_line="1">The <code>display</code> CSS property specifies the display behavior (the type of rendering box) of an element.</div>
+<h3 id="values" class="preview-paragraph-3 preview-line 3" data_line_start="3" data_line_end="3" data_line="3,4" count_line="1">Values</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>none</code></td>
+<td>The element is not displayed.</td>
+</tr>
+<tr>
+<td><code>block</code></td>
+<td>The element is displayed as a block element.</td>
+</tr>
+<tr>
+<td><code>inline</code></td>
+<td>The element is displayed as an inline element.</td>
+</tr>
+<tr>
+<td><code>inline-block</code></td>
+<td>The element is displayed as an inline-level block container.</td>
+</tr>
+<tr>
+<td><code>flex</code></td>
+<td>The element is displayed as a block-level flex container.</td>
+</tr>
+<tr>
+<td><code>inline-flex</code></td>
+<td>The element is displayed as an inline-level flex container.</td>
+</tr>
+<tr>
+<td><code>grid</code></td>
+<td>The element is displayed as a block-level grid container.</td>
+</tr>
+<tr>
+<td><code>inline-grid</code></td>
+<td>The element is displayed as an inline-level grid container.</td>
+</tr>
+<tr>
+<td><code>table</code></td>
+<td>The element is displayed as a table.</td>
+</tr>
+<tr>
+<td><code>inline-table</code></td>
+<td>The element is displayed as an inline-level table.</td>
+</tr>
+<tr>
+<td><code>list-item</code></td>
+<td>The element is displayed as a list item.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Inherits the <code>display</code> property from its parent.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Sets the property to its default value.</td>
+</tr>
+<tr>
+<td><code>revert</code></td>
+<td>Resets the property to the value established by the user-agent stylesheet.</td>
+</tr>
+<tr>
+<td><code>revert-layer</code></td>
+<td>Resets the property to the value established by the user-agent stylesheet, including any changes by the <code>@import</code> rule.</td>
+</tr>
+<tr>
+<td><code>unset</code></td>
+<td>Resets the property to its inherited value if it inherits from its parent, otherwise sets it to its initial value.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example" class="preview-paragraph-24 preview-line 24" data_line_start="24" data_line_end="24" data_line="24,25" count_line="1">Example</h3>
+<div  class="preview-paragraph-25 preview-line 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90" data_line_start="25" data_line_end="90" data_line="25,91" count_line="66" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-25 preview-line 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90" data_line_start="25" data_line_end="90" data_line="25,91" count_line="66" style="overflow: auto; position: relative;"><pre><code class="hljs language-css"><span class="hljs-comment">/* Example */</span>
+<span class="hljs-selector-class">.element-none</span> {
+  <span class="hljs-attribute">display</span>: none; <span class="hljs-comment">/* Element is not displayed */</span>
+}
+
+<span class="hljs-selector-class">.element-block</span> {
+  <span class="hljs-attribute">display</span>: block; <span class="hljs-comment">/* Element is displayed as a block element */</span>
+}
+
+<span class="hljs-selector-class">.element-inline</span> {
+  <span class="hljs-attribute">display</span>: inline; <span class="hljs-comment">/* Element is displayed as an inline element */</span>
+}
+
+<span class="hljs-selector-class">.element-inline-block</span> {
+  <span class="hljs-attribute">display</span>: inline-block; <span class="hljs-comment">/* Element is displayed as an inline-level block container */</span>
+}
+
+<span class="hljs-selector-class">.element-flex</span> {
+  <span class="hljs-attribute">display</span>: flex; <span class="hljs-comment">/* Element is displayed as a block-level flex container */</span>
+}
+
+<span class="hljs-selector-class">.element-inline-flex</span> {
+  <span class="hljs-attribute">display</span>: inline-flex; <span class="hljs-comment">/* Element is displayed as an inline-level flex container */</span>
+}
+
+<span class="hljs-selector-class">.element-grid</span> {
+  <span class="hljs-attribute">display</span>: grid; <span class="hljs-comment">/* Element is displayed as a block-level grid container */</span>
+}
+
+<span class="hljs-selector-class">.element-inline-grid</span> {
+  <span class="hljs-attribute">display</span>: inline-grid; <span class="hljs-comment">/* Element is displayed as an inline-level grid container */</span>
+}
+
+<span class="hljs-selector-class">.element-table</span> {
+  <span class="hljs-attribute">display</span>: table; <span class="hljs-comment">/* Element is displayed as a table */</span>
+}
+
+<span class="hljs-selector-class">.element-inline-table</span> {
+  <span class="hljs-attribute">display</span>: inline-table; <span class="hljs-comment">/* Element is displayed as an inline-level table */</span>
+}
+
+<span class="hljs-selector-class">.element-list-item</span> {
+  <span class="hljs-attribute">display</span>: list-item; <span class="hljs-comment">/* Element is displayed as a list item */</span>
+}
+
+<span class="hljs-selector-class">.element-inherit</span> {
+  <span class="hljs-attribute">display</span>: inherit; <span class="hljs-comment">/* Inherits the display property from its parent */</span>
+}
+
+<span class="hljs-selector-class">.element-initial</span> {
+  <span class="hljs-attribute">display</span>: initial; <span class="hljs-comment">/* Sets the property to its default value */</span>
+}
+
+<span class="hljs-selector-class">.element-revert</span> {
+  <span class="hljs-attribute">display</span>: revert; <span class="hljs-comment">/* Resets the property to the value established by the user-agent stylesheet */</span>
+}
+
+<span class="hljs-selector-class">.element-revert-layer</span> {
+  <span class="hljs-attribute">display</span>: revert-layer; <span class="hljs-comment">/* Resets the property to the value established by the user-agent stylesheet, including any changes by the @import rule */</span>
+}
+
+<span class="hljs-selector-class">.element-unset</span> {
+  <span class="hljs-attribute">display</span>: unset; <span class="hljs-comment">/* Resets the property to its inherited value if it inherits from its parent, otherwise sets it to its initial value */</span>
+}
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="/* Example */
+.element-none {
+  display: none; /* Element is not displayed */
+}
+
+.element-block {
+  display: block; /* Element is displayed as a block element */
+}
+
+.element-inline {
+  display: inline; /* Element is displayed as an inline element */
+}
+
+.element-inline-block {
+  display: inline-block; /* Element is displayed as an inline-level block container */
+}
+
+.element-flex {
+  display: flex; /* Element is displayed as a block-level flex container */
+}
+
+.element-inline-flex {
+  display: inline-flex; /* Element is displayed as an inline-level flex container */
+}
+
+.element-grid {
+  display: grid; /* Element is displayed as a block-level grid container */
+}
+
+.element-inline-grid {
+  display: inline-grid; /* Element is displayed as an inline-level grid container */
+}
+
+.element-table {
+  display: table; /* Element is displayed as a table */
+}
+
+.element-inline-table {
+  display: inline-table; /* Element is displayed as an inline-level table */
+}
+
+.element-list-item {
+  display: list-item; /* Element is displayed as a list item */
+}
+
+.element-inherit {
+  display: inherit; /* Inherits the display property from its parent */
+}
+
+.element-initial {
+  display: initial; /* Sets the property to its default value */
+}
+
+.element-revert {
+  display: revert; /* Resets the property to the value established by the user-agent stylesheet */
+}
+
+.element-revert-layer {
+  display: revert-layer; /* Resets the property to the value established by the user-agent stylesheet, including any changes by the @import rule */
+}
+
+.element-unset {
+  display: unset; /* Resets the property to its inherited value if it inherits from its parent, otherwise sets it to its initial value */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="/* Example */
+.element-none {
+  display: none; /* Element is not displayed */
+}
+
+.element-block {
+  display: block; /* Element is displayed as a block element */
+}
+
+.element-inline {
+  display: inline; /* Element is displayed as an inline element */
+}
+
+.element-inline-block {
+  display: inline-block; /* Element is displayed as an inline-level block container */
+}
+
+.element-flex {
+  display: flex; /* Element is displayed as a block-level flex container */
+}
+
+.element-inline-flex {
+  display: inline-flex; /* Element is displayed as an inline-level flex container */
+}
+
+.element-grid {
+  display: grid; /* Element is displayed as a block-level grid container */
+}
+
+.element-inline-grid {
+  display: inline-grid; /* Element is displayed as an inline-level grid container */
+}
+
+.element-table {
+  display: table; /* Element is displayed as a table */
+}
+
+.element-inline-table {
+  display: inline-table; /* Element is displayed as an inline-level table */
+}
+
+.element-list-item {
+  display: list-item; /* Element is displayed as a list item */
+}
+
+.element-inherit {
+  display: inherit; /* Inherits the display property from its parent */
+}
+
+.element-initial {
+  display: initial; /* Sets the property to its default value */
+}
+
+.element-revert {
+  display: revert; /* Resets the property to the value established by the user-agent stylesheet */
+}
+
+.element-revert-layer {
+  display: revert-layer; /* Resets the property to the value established by the user-agent stylesheet, including any changes by the @import rule */
+}
+
+.element-unset {
+  display: unset; /* Resets the property to its inherited value if it inherits from its parent, otherwise sets it to its initial value */
+}
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="description" class="preview-paragraph-92 preview-line 92" data_line_start="92" data_line_end="92" data_line="92,93" count_line="1">Description</h3>
+<div class="preview-paragraph-93 preview-line 93" data_line_start="93" data_line_end="93" data_line="93,94" count_line="1">The <code>display</code> property determines how an element is displayed in the document. It can define an element as a block, inline, flex, grid, table, or list item. This property is crucial for controlling the layout and structure of web pages. It can be used to show or hide elements, change the flow of elements, and structure elements into complex layouts using flex or grid displays.</div>
+<ul class="preview-paragraph-95 preview-line 95 96 97 98 99 100 101" data_line_start="95" data_line_end="101" data_line="95,102" count_line="7">
+<li><strong>Default Value</strong>: <code>inline</code></li>
+<li><strong>Applies to</strong>: All elements</li>
+<li><strong>Inherited</strong>: No</li>
+<li><strong>Animatable</strong>: No</li>
+<li><strong>Media</strong>: Visual</li>
+<li><strong>Computed Value</strong>: As specified</li>
+</ul>
+<h3 id="all-most-simillar-properties" class="preview-paragraph-102 preview-line 102" data_line_start="102" data_line_end="102" data_line="102,103" count_line="1">All Most Simillar Properties</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>visibility</code></td>
+<td>Controls the visibility of an element.</td>
+<td><code>visibility</code> hides elements but still occupies space.</td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td>Specifies the positioning method for an element.</td>
+<td><code>position</code> affects the element's placement but not display type.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="browser-compatibility" class="preview-paragraph-109 preview-line 109" data_line_start="109" data_line_end="109" data_line="109,110" count_line="1">Browser Compatibility</h3>
+<table align="center">
+<thead>
+<tr>
+<th>Browser</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mobile Browsers</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="in-javascript" class="preview-paragraph-121 preview-line 121" data_line_start="121" data_line_end="121" data_line="121,122" count_line="1">In JavaScript</h3>
+<div  class="preview-paragraph-122 preview-line 122 123 124 125" data_line_start="122" data_line_end="125" data_line="122,126" count_line="4" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-122 preview-line 122 123 124 125" data_line_start="122" data_line_end="125" data_line="122,126" count_line="4" style="overflow: auto; position: relative;"><pre><code class="hljs language-javascript"><span class="hljs-comment">// In JavaScript</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;myElement&quot;</span>).<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">&quot;flex&quot;</span>; <span class="hljs-comment">// Example of setting display to &#x27;flex&#x27;</span>
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// In JavaScript
+document.getElementById(&quot;myElement&quot;).style.display = &quot;flex&quot;; // Example of setting display to 'flex'
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="// In JavaScript
+document.getElementById(&quot;myElement&quot;).style.display = &quot;flex&quot;; // Example of setting display to 'flex'
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><h3 id="example-code" class="preview-paragraph-127 preview-line 127" data_line_start="127" data_line_end="127" data_line="127,128" count_line="1">Example Code</h3>
+<div  class="preview-paragraph-128 preview-line 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236" data_line_start="128" data_line_end="236" data_line="128,237" count_line="109" style="overflow: auto; position: relative; overflow: auto; position: relative;"><div  class="preview-paragraph-128 preview-line 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236" data_line_start="128" data_line_end="236" data_line="128,237" count_line="109" style="overflow: auto; position: relative;"><pre><code class="hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: center;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f8f8f8</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        }
+        <span class="hljs-selector-class">.main-container</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">8px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">text-align</span>: center;
+        }
+        <span class="hljs-selector-class">.sub-container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">8px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#dcdbdb</span>;
+            <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+        }
+        <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4CAF50</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+        }
+        <span class="hljs-selector-class">.inline</span> <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">display</span>: inline-block;
+        }
+        <span class="hljs-selector-class">.block</span> <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">display</span>: block;
+        }
+        <span class="hljs-selector-class">.flex</span> {
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: space-around;
+            <span class="hljs-attribute">flex-wrap</span>: wrap;
+        }
+        <span class="hljs-selector-class">.flex</span> <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">display</span>: block;
+        }
+        <span class="hljs-selector-class">.grid</span> {
+            <span class="hljs-attribute">display</span>: grid;
+            <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>fr);
+            <span class="hljs-attribute">gap</span>: <span class="hljs-number">10px</span>;
+        }
+        <span class="hljs-selector-class">.grid</span> <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">display</span>: block;
+        }
+        <span class="hljs-selector-class">.none</span> <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>display Property Values<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container block&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>block<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container inline&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>inline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container flex&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>flex<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container grid&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>grid<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-container none&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>none<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+</code></pre>
+<div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;style&gt;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+        .main-container {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .sub-container {
+            width: 80%;
+            margin: 10px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            background-color: #dcdbdb;
+            margin-bottom: 30px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .inline .box {
+            display: inline-block;
+        }
+        .block .box {
+            display: block;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .flex .box {
+            display: block;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .grid .box {
+            display: block;
+        }
+        .none .box {
+            display: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;display Property Values&lt;/h1&gt;
+        &lt;div class=&quot;sub-container block&quot;&gt;
+            &lt;h2&gt;block&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container inline&quot;&gt;
+            &lt;h2&gt;inline&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container flex&quot;&gt;
+            &lt;h2&gt;flex&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container grid&quot;&gt;
+            &lt;h2&gt;grid&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container none&quot;&gt;
+            &lt;h2&gt;none&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div><div class="mmd-clipboard-copy-container" style="right: 0; top: 0; position: absolute;"><clipboard-copy aria-label="Copy" class="ClipboardButton mmd-tooltipped-no-delay" tabindex="0" role="button" value="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;style&gt;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+        .main-container {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .sub-container {
+            width: 80%;
+            margin: 10px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            background-color: #dcdbdb;
+            margin-bottom: 30px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .inline .box {
+            display: inline-block;
+        }
+        .block .box {
+            display: block;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .flex .box {
+            display: block;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .grid .box {
+            display: block;
+        }
+        .none .box {
+            display: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;main-container&quot;&gt;
+        &lt;h1&gt;display Property Values&lt;/h1&gt;
+        &lt;div class=&quot;sub-container block&quot;&gt;
+            &lt;h2&gt;block&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container inline&quot;&gt;
+            &lt;h2&gt;inline&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container flex&quot;&gt;
+            &lt;h2&gt;flex&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container grid&quot;&gt;
+            &lt;h2&gt;grid&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sub-container none&quot;&gt;
+            &lt;h2&gt;none&lt;/h2&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-copy-icon" style="margin: 0.5rem;">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mmd-clipboard-icon mmd-clipboard-check-icon" style="display: none; margin: 0.5rem;">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg></clipboard-copy></div></div>
+    </div>
+  </div>
+</body>
+</html>
