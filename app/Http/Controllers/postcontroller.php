@@ -50,7 +50,7 @@ class PostController extends Controller
 
     public function showTopics() {
         // Fetch all topics from the database
-        $topics = DB::table('topics_name')->select('name','link')->get();
+        $topics = DB::table('courses')->select('id','name')->get();
     
         // Pass data to index view
         return view('index', compact('topics'));

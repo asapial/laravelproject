@@ -25,18 +25,12 @@
         </div>
     </div>
     <div class="topics">
-        {{-- <div class="topics_1">
-            <button id="burger">
-                <img src="{{ asset('UI/icon/image.png') }}" alt="" width="70%">
-            </button>
-        </div> --}}
 
         <div class="topicsContainer">
             @if ($topics->isNotEmpty())
             @foreach ($topics as $topic)
                 <div class="topicsBox">
-                    <a href="{{$topic->link}}">{{$topic->name}}</a>
-                    {{-- <h1>{{ $topic->name }}</h1> --}}
+                    <a href="courses/{{$topic->id}}" target="_blank">{{$topic->name}}</a>
                 </div>
             @endforeach
         @else

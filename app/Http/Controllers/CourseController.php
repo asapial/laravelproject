@@ -108,10 +108,19 @@ class CourseController extends Controller
     
         // Check if the user is enrolled in the course
         $user = Auth::user();
-        if (!Enrollment::where('user_id', $user->id)->where('course_id', $course->id)->exists()) {
-            return redirect()->route('dashboard')->with('error', 'You are not enrolled in this course.');
-        }
-    
+        // if (!Enrollment::where('user_id', $user->id)->where('course_id', $course->id)->exists()) {
+        //     return redirect()->route('dashboard')->with('error', 'You are not enrolled in this course.');
+        // }
+        
+        // Redirect to home page if the user is not logged in
+    if (!$user) {
+        return redirect()->route('login')->with('error', 'You must be logged in to access this course.');
+    }
+
+    // Check if the user is enrolled in the course
+    if (!Enrollment::where('user_id', $user->id)->where('course_id', $course->id)->exists()) {
+        return redirect()->route('dashboard')->with('error', 'You are not enrolled in this course.');
+    }
         // Fetch posts based on the category of the course
         $posts = TblPost::where('cat', $course->name)->get();
     
