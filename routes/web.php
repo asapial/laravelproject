@@ -49,30 +49,24 @@ Route::middleware(['auth'])->group(function () {
 // ------------------------------------------------------------------------------------------------
 // route for add course
 
-
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/courses/add', [CourseController::class, 'create'])
-//         ->name('courses.create')
-//         ->middleware(function ($request, $next) {
-//             if (auth()->user()->usertype !== 'admin') {
-//                 abort(403, 'Unauthorized access. Only admins can add courses.');
-//             }
-//             return $next($request);
-//         });
-
-//     Route::post('/courses/store', [CourseController::class, 'store'])
-//         ->name('courses.store')
-//         ->middleware(function ($request, $next) {
-//             if (auth()->user()->usertype !== 'admin') {
-//                 abort(403, 'Unauthorized access. Only admins can add courses.');
-//             }
-//             return $next($request);
-//         });
-// });
-
+Route::get('/courses/create', [CourseController::class, 'create'])->name('courses.create');
+Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
 
 // route for add course
+// ------------------------------------------------------------------------------------------------
+// route for show course
+
+Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
+Route::get('/courses/{course}/edit', [CourseController::class, 'edit'])->name('courses.edit');
+Route::delete('/courses/{course}', [CourseController::class, 'destroy'])->name('courses.destroy');
+
+Route::get('/courses/{course}/edit', [CourseController::class, 'edit'])->name('courses.edit');
+Route::put('/courses/{course}', [CourseController::class, 'update'])->name('courses.update');
+
+Route::get('/courses/{id}', [CourseController::class, 'showCoursePosts'])->name('courses.posts');
+
+
+// route for show course
 // ------------------------------------------------------------------------------------------------
 
 Route::middleware(['auth'])->group(function () {
@@ -98,15 +92,6 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 Route::middleware(['auth'])->group(function () {
     Route::post('/enrollments', [EnrollmentController::class, 'store'])->name('enrollments.store');
 });
-
-
-// routes for add course 
-
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/add-course', [CourseController::class, 'create'])->name('courses.create');
-    Route::post('/add-course', [CourseController::class, 'store'])->name('courses.store');
-});
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

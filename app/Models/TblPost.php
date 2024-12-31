@@ -20,4 +20,7 @@ class TblPost extends Model
         'tags',
         'date',
     ];
+
+    
+
 }

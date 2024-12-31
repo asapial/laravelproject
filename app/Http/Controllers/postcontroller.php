@@ -9,10 +9,17 @@ use Illuminate\Support\Facades\DB;
 class PostController extends Controller
 {   
 
+    // public function create()
+    // {
+    //     return view('post.addpost'); // Ensure this matches your Blade file's location
+    // }
+
     public function create()
     {
-        return view('post.addpost'); // Ensure this matches your Blade file's location
+        $courses = Courses::all(); // Fetch all courses from the database
+        return view('posts.create', compact('courses'));
     }
+
 
     public function store(Request $request)
     {

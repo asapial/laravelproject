@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\TblPost;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,8 +11,10 @@ class TblPostController extends Controller
 {
     public function create()
     {
-        return view('post.addpost');
+        $courses = Course::all(); // Fetch all courses from the database
+        return view('post.addpost', compact('courses'));
     }
+
 
     public function store(Request $request)
     {

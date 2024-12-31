@@ -54,9 +54,16 @@ class User extends Authenticatable
         return $this->hasMany(Enrollment::class);
     }
 
-    public function courses()
+    // public function courses()
+    // {
+    //     return $this->hasManyThrough(Course::class, Enrollment::class, 'user_id', 'id', 'id', 'course_id');
+    // }
+
+    public function enrollment()
     {
-        return $this->hasManyThrough(Course::class, Enrollment::class, 'user_id', 'id', 'id', 'course_id');
+        return $this->hasMany(\App\Models\Enrollment::class);
     }
+
+
 
 }

@@ -1,104 +1,72 @@
-{{-- <x-app-layout></x-app-layout> --}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Post</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #121212; /* Dark background */
-            color: #e0e0e0; /* Light text for contrast */
-        }
-        .form-container {
-            max-width: 700px;
-            margin: 50px auto;
-            background: #1e1e1e; /* Dark card background */
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Premium shadow effect */
-            padding: 30px;
-            border: 1px solid #333; /* Subtle border for premium feel */
-        }
-        .form-header {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
-            font-size: 1.8rem;
-            color: #f5f5f5; /* Premium header color */
-            letter-spacing: 0.5px;
-        }
-        .form-label {
-            font-weight: 500;
-            color: #b0b0b0; /* Subtle label text color */
-        }
-        .form-control {
-            background-color: #292929; /* Input background */
-            color: #ffffff; /* Input text color */
-            border: 1px solid #444; /* Border for inputs */
-        }
-        .form-control:hover {
-            background-color: #292929;
-            color: #ffffff; 
-            border-color: #6200ea; /* Premium purple focus */
-            box-shadow: 0 0 5px #6200ea;
-        }
-        .btn-primary {
-            background-color: #6200ea; /* Premium purple button */
-            border-color: #6200ea;
-        }
-        .btn-primary:hover {
-            background-color: #7e57c2; /* Lighter purple on hover */
-        }
-        .alert {
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
-    <div class="form-container">
-        <div class="form-header">Add a New Post</div>
-        @if (session('success'))
-            <div class="alert alert-success">{{ session('success') }}</div>
-        @endif
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-        <form action="{{ route('tbl_post.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="mb-3">
-                <label for="cat" class="form-label">Category</label>
-                <input type="text" class="form-control" id="cat" name="cat" placeholder="Enter category" required>
-            </div>
-            <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
-            </div>
-            <div class="mb-3">
-                <label for="body" class="form-label">Body</label>
-                <textarea class="form-control" id="body" name="body" rows="5" placeholder="Enter body text" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="image" class="form-label">Image</label>
-                <input type="file" class="form-control" id="image" name="image">
-            </div>
-            <div class="mb-3">
-                <label for="tags" class="form-label">Tags</label>
-                <input type="text" class="form-control" id="tags" name="tags" placeholder="Enter tags (comma-separated)">
-            </div>
-            <div class="mb-3">
-                <label for="date" class="form-label">Date</label>
-                <input type="date" class="form-control" id="date" name="date" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </form>
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-3xl text-gray-100 leading-tight">
+            {{ __('Add Post') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12 bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-gray-100">
+        <div class="form-container bg-gray-900 mx-auto rounded-lg shadow-2xl px-8 py-10 max-w-3xl">
+            <div class="form-header text-white text-center text-3xl font-semibold mb-8">Add a New Post</div>
+
+            @if (session('success'))
+                <div class="alert alert-success bg-green-600 text-white p-4 rounded-lg mb-4">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger bg-red-600 text-white p-4 rounded-lg mb-4">
+                    <ul class="list-disc pl-5">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form action="{{ route('tbl_post.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+
+                <!-- Category Dropdown -->
+                <div class="mb-6">
+                    <label for="cat" class="form-label text-gray-400 text-lg">Category</label>
+                    <select class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="cat" name="cat" required>
+                        <option value="" disabled selected>Select a category</option>
+                        @foreach($courses as $course)
+                            <option value="{{ $course->name }}">{{ $course->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="mb-6">
+                    <label for="title" class="form-label text-gray-400 text-lg">Title</label>
+                    <input type="text" class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="title" name="title" placeholder="Enter title" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="body" class="form-label text-gray-400 text-lg">Body</label>
+                    <textarea class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="body" name="body" rows="6" placeholder="Enter body text" required></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <label for="image" class="form-label text-gray-400 text-lg">Image</label>
+                    <input type="file" class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="image" name="image">
+                </div>
+
+                <div class="mb-6">
+                    <label for="tags" class="form-label text-gray-400 text-lg">Tags</label>
+                    <input type="text" class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="tags" name="tags" placeholder="Enter tags (comma-separated)">
+                </div>
+
+                <div class="mb-6">
+                    <label for="date" class="form-label text-gray-400 text-lg">Date</label>
+                    <input type="date" class="form-control bg-gray-800 border border-gray-700 text-white text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full p-3" id="date" name="date" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full bg-purple-600 border-none text-white hover:bg-purple-700 rounded-lg py-3 text-lg focus:outline-none focus:ring-4 focus:ring-purple-500 transition-all">
+                    Submit
+                </button>
+            </form>
+        </div>
     </div>
-</body>
-</html>
-{{-- </x-app-layout> --}}
+</x-app-layout>

@@ -21,16 +21,17 @@ class EnrollmentController extends Controller
         ]);
 
         $user = Auth::user();
+        $courseId = $request->course_id;
 
         // Check if user is already enrolled in the course
-        if (Enrollment::where('user_id', $user->id)->where('course_id', $request->course_id)->exists()) {
+        if (Enrollment::where('user_id', $user->id)->where('course_id', $courseId)->exists()) {
             return redirect()->back()->with('error', 'You are already enrolled in this course.');
         }
 
         // Create a new enrollment
         Enrollment::create([
             'user_id' => $user->id,
-            'course_id' => $request->course_id,
+            'course_id' => $courseId,
         ]);
 
         return redirect()->route('dashboard')->with('success', 'Successfully enrolled in the course.');
