@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\postcontroller;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\DashboardController;
+use Illuminate\Support\Facades\Auth;
 
 // Route::get('/', function () {
 //     return view('index');
@@ -18,9 +19,11 @@ Route::get('/', [postcontroller::class, 'showTopics']);
 // ------------------------------------------------------------------------------------------------
 // route for dashboard 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+use App\Http\Controllers\DashboardController;
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
+});
 
 // route for dashboard 
 // ------------------------------------------------------------------------------------------------
@@ -68,16 +71,25 @@ Route::get('/courses/{id}', [CourseController::class, 'showCoursePosts'])->name(
 
 // route for show course
 // ------------------------------------------------------------------------------------------------
+// route for exam controll
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
+use App\Http\Middleware\CheckAdmin;
+use App\Http\Controllers\ExamManagementController;
+
+
+Route::prefix('exams')->middleware(['auth', CheckAdmin::class])->group(function () {
+    Route::get('/create', [ExamManagementController::class, 'create'])->name('admin.exams.create');
+    Route::post('/store', [ExamManagementController::class, 'store'])->name('admin.exams.store');
 });
+
+// route for exam controll
+// ------------------------------------------------------------------------------------------------
+
 
 Route::get('/courses/{id}', [CourseController::class, 'show'])->name('courses.show');
 
 Route::post('/enrollments', [EnrollmentController::class, 'store'])->name('enrollments.store');
 
-use App\Http\Controllers\AdminController;
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
@@ -101,5 +113,9 @@ Route::middleware('auth')->group(function () {
 
 // this route is for logout 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+
+Route::get('/editor', function () {
+    return view('editorPanel.editor');
+});
 
 require __DIR__.'/auth.php';

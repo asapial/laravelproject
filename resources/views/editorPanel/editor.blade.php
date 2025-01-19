@@ -61,6 +61,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    {{-- <script src="{{ asset('assets/js/codemirror.js') }}"></script>
+    <script src="{{ asset('assets/js/xml.js') }}"></script>
+    <script src="{{ asset('assets/js/css.js') }}"></script>
+    <script src="{{ asset('assets/js/javascript.js') }}"></script>
+    <script src="{{ asset('assets/js/htmlmixed.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/codemirror.css') }}"> --}}
+
     <script>
         const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
             mode: 'htmlmixed',

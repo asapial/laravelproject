@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebJa</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">  <!-- Common CSS File -->
-    <link rel="stylesheet" href="{{ asset('css/data.css') }}">  <!-- Common CSS File -->
+
+    <!-- Common CSS Files -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">  
+    <link rel="stylesheet" href="{{ asset('css/data.css') }}">  
+
+    <!-- Add any additional meta tags or third-party CSS libraries here -->
 </head>
 <body>
 
+    <!-- Main Container -->
     <div id="container">
-        @include('header')  <!-- Include header -->
-        @include('sidebar')  <!-- Include sidebar -->
-        @include('body')  <!-- Include body content -->
-        @include('footer')  <!-- Include footer -->
+        <!-- Include Header -->
+        @include('header')
 
-      </div>
+        <!-- Include Sidebar -->
+        @include('sidebar')
 
-    <script src="{{ asset('js/script.js') }}"></script>  <!-- If you have any JS file -->
+        <!-- Include Body Content -->
+        @include('body')
+
+        <!-- Include Footer -->
+        @include('footer')
+    </div>
+
+    <!-- Common JavaScript File -->
+    <script src="{{ asset('js/script.js') }}"></script>  
+
+    <!-- Add additional JS libraries or scripts here -->
 </body>
 </html>
